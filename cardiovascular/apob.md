@@ -1,7 +1,7 @@
 # ApoB Clinical Protocol
 
 ## Standard Reference Ranges
-- **Optimal:** < 1.8 mmol/L
+- **Optimal:** < 2.7 mmol/L
 - **High Risk:** ≥ 1.4 mmol/L
 
 ## Clinical Context
