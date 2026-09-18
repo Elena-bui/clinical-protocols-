@@ -1,0 +1,42 @@
+name: "Clinical Guideline Proposal"
+description: "Submit a question, protocol update, or reference range review"
+title: "[Proposal]: "
+labels: ["clinical-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Clinical Update Intake
+        Use this form to propose updates to master protocols. Tom and the assigned clinician will review.
+  - type: input
+    id: biomarker
+    attributes:
+      label: Biomarker / Topic Area
+      placeholder: "e.g., ApoB, Ferritin, HbA1c, Metabolic Syndrome"
+    validations:
+      required: true
+  - type: dropdown
+    id: update_type
+    attributes:
+      label: Type of Request
+      options:
+        - "Reference Range / Cut-off Change"
+        - "Contradiction / Conflict Flag"
+        - "New Evidence / Guideline Update"
+        - "General Clinical Clarification"
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_change
+    attributes:
+      label: Proposed Change / Question
+      placeholder: "State the current guidance and the proposed adjustment."
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Clinical Rationale & Citations
+      placeholder: "Include relevant guidelines (e.g., ESC, NICE, ADA) or clinical rationale."
+    validations:
+      required: true
